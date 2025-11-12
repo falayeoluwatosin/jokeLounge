@@ -1,0 +1,125 @@
+/* General Styling
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body {
+    background-image:url(image1.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+    animation: floatHeader 3s ease-in-out infinite;
+}
+
+@keyframes floatHeader {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff4081;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease-out;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #333;
+    animation: fadeIn 2.5s ease-out;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.joke-box {
+    background: rgba(255,255,255,0.7);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    animation: fadeInUp 1.5s ease;
+}
+
+.joke-box:hover {
+    transform: scale(1.05);
+}
+
+#joke-text {
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 20px;
+    animation: fadeInJoke 1s ease forwards;
+}
+
+@keyframes fadeInJoke {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+#new-joke-btn {
+    background: linear-gradient(45deg, #ff4081, #ff9800);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#new-joke-btn:hover {
+    background: linear-gradient(45deg, #ff9800, #ff4081);
+    transform: scale(1.1) rotate(2deg);
+}
+
+footer {
+    background: rgba(255,255,255,0.4);
+    padding: 15px;
+    border-top: 2px solid rgba(255,255,255,0.5);
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Animations */
+/* @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+} */ */
+
+
+
+
+
+
+
+
